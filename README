@@ -1,0 +1,32 @@
+ABOUT
+=====
+toggleField.jquery.js is a multi-functional jQuery plug-in to enable 
+behavior similar to the "placeholder" attribute on varieties of INPUT types 
+
+REQUIREMENTS
+============
+- jQuery v1.3 or above
+
+FEATURES
+========
+- Sets the "placeholder" attribute if it is not already defined
+- Markup still validates in <HTML5 if "placeholder" property is omitted 
+  and "title" or "label" is specified as the text-source
+- Toggles the "value" of the field in browsers that do not support "placeholder"
+- Clears the populated values on submit to assist with validation
+- Mimics functionality for password fields by creating an adjacent text field 
+  and toggling the two on focus/blur
+- Tested browser-compatible back to IE6
+
+TODO
+====
+- Consider implementation for TEXTAREA elements
+- Include "force" option to override "placeholder" option
+- Enforce behavior for HTML5 elements that do not display placeholder
+
+CREDITS
+=======
+- Check for "placeholder" attribute support in browser:
+  http://diveintohtml5.org/detect.html#input-placeholder
+- Inspiration for the password field helper function:
+  http://stackoverflow.com/questions/1544317/jquery-change-type-of-input-field

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>togglefield example</title>
+		<style>
+			label{display:block;}
+			input.toggle{
+				color:#999;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>Sample form</legend>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" title="First and Last Name" placeholder="John Appleseed"></input>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" title="Enter password" placeholder="p@$$w0rd"></input>
+				<label for="url">Homepage</label>
+				<input type="url" id="url" name="url" title="Home page web address" placeholder="http://"></input>
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" title="Valid email address" placeholder="name@domain.tld"></input>
+				<label for="date">Date</label>
+				<input type="date" id="date" name="date" title="Today's date" placeholder="YYYY/MM/DD"></input>
+			</fieldset>
+			<button type="submit">Submit</button>
+		</form>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="../togglefield.jquery.js"></script>
+		<script type="text/javascript">
+			jQuery('input').toggleField();
+		</script>
+	</body>
+</html>
