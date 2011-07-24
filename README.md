@@ -23,7 +23,7 @@ INSTALLATION
 
 Include script after the jQuery library (unless you are packaging scripts somehow else):
 
-	<script src="/path/to/domModal.jQuery.js"></script>
+	<script src="/path/to/toggleField.jQuery.js"></script>
 	
 USAGE
 -----
