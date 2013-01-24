@@ -23,22 +23,23 @@ INSTALLATION
 
 Include script after the jQuery library (unless you are packaging scripts somehow else):
 
-	<script src="/path/to/toggleField.jQuery.js"></script>
+	<script src="/path/to/jquery.togglefield.js"></script>
 	
 USAGE
 -----
 
+Applies behavior to all input elements:
+
 	jQuery('input').toggleField();
 
-Applies behavior to all input elements
+References "title" attribute for placeholder text. Useful for accessibility:
 
 	jQuery('[type="url"]').togglefield({textsrc:"title"});
 
-References "title" attribute for placeholder text. Useful for accessibility
+Uses the label text for placeholder. Handy when labels are hidden:
 
 	jQuery('input:password').togglefield({textsrc:"label"});
 
-Uses the label text for placeholder. Handy when labels are hidden.
 
 OPTIONS
 -------
@@ -58,6 +59,7 @@ CHANGELOG
 CREDITS
 -------
 
+* For a more advanced implementation of this type of behavior, check out [jquery.placeholder.js][jqph]
 * Check for "placeholder" attribute support in browser: [diveintohtml5][dive]
 * Inspiration for the password field helper function: [stack overflow][so]
 
@@ -67,6 +69,7 @@ AUTHOR
 
 [gh]: https://github.com/oomlaut/toggleField.jquery.js
 [ghi]: https://github.com/oomlaut/toggleField.jquery.js/issues
+[jqph]: https://github.com/mathiasbynens/jquery-placeholder
 [dive]: http://diveintohtml5.org/detect.html#input-placeholder
 [so]: http://stackoverflow.com/questions/1544317/jquery-change-type-of-input-field
 [pg]: http://paulgueller.com
