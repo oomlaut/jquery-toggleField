@@ -3,6 +3,8 @@ toggleField.jquery.js [![endorse](http://api.coderwall.com/oomlaut/endorsecount.
 
 A multi-functional jQuery plug-in to enable behavior similar to the _placeholder_ attribute on varieties of `input` types 
 
+[![endorse](https://api.coderwall.com/oomlaut/endorsecount.png)](https://coderwall.com/oomlaut)
+
 REQUIREMENTS
 ------------
 
